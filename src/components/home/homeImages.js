@@ -1,0 +1,9 @@
+// Photo paths used by the home page sections.
+export const POSTS = '/images/instsgram post/'
+export const IMG = {
+  food: `${POSTS}655987176_18069999431270939_3194857039852054680_n..webp`,
+  foodPrep: `${POSTS}658380524_18309529420287319_7949303713269082549_n..webp`,
+  hospital: `${POSTS}656077685_18059426180691292_4985631946105061619_n..webp`,
+  education: `${POSTS}656649099_18120069895528037_1551288656074156068_n..webp`,
+  clipBlood: `${POSTS}655450985_18155250109444012_2279890235362913082_n..webp`,
+}

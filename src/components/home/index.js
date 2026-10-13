@@ -1,0 +1,8 @@
+export { default as HeroSlider } from './HeroSlider'
+export { default as MissionSection } from './MissionSection'
+export { default as WhatWeDo } from './WhatWeDo'
+export { default as ImpactBand } from './ImpactBand'
+export { default as ContributeSection } from './ContributeSection'
+export { default as LatestUpdates } from './LatestUpdates'
+export { default as KnowingSection } from './KnowingSection'
+export { default as WriteToUs } from './WriteToUs'
