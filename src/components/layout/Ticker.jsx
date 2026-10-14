@@ -1,31 +1,29 @@
 import { Link } from 'react-router-dom'
 
 const TICKER = [
-  'Blood donation camps',
-  'Food distribution',
-  'Education support',
-  'Community welfare',
-  'Your contribution helps communities in need',
+  { label: 'Clean Communities for a Healthier Tomorrow' },
+  { label: 'Contribute Now', to: '/donate' },
+  { label: 'Food Distribution for Needy Families' },
+  { label: 'Contribute Now', to: '/donate' },
+  { label: 'Education Support for Brighter Futures' },
+  { label: 'Contribute Now', to: '/donate' },
 ]
 
 export default function Ticker() {
-  const items = [...TICKER, ...TICKER]
+  // Repeating the complete message set keeps the marquee full on wide screens.
+  const items = [...TICKER, ...TICKER, ...TICKER, ...TICKER]
+
   return (
-    <div className="marquee-wrap bg-brand text-white">
-      <div className="container-x flex h-10 items-center gap-4">
-        <div className="relative min-w-0 flex-1 overflow-hidden">
-          <div className="marquee-track flex w-max items-center whitespace-nowrap">
-            {items.map((text, i) => (
-              <span key={i} className="flex items-center text-[13px] font-medium">
-                {text}
-                <span aria-hidden="true" className="mx-5 text-white/60">|</span>
-              </span>
-            ))}
-          </div>
+    <div className="marquee-wrap h-10 overflow-hidden bg-[#24963d] text-white">
+      <div className="container-x flex h-full items-center overflow-hidden">
+        <div className="marquee-track flex w-max items-center whitespace-nowrap">
+          {items.map((item, index) => (
+            <span key={`${item.label}-${index}`} className="flex shrink-0 items-center text-[12px] font-medium sm:text-[15px]">
+              {item.to ? <Link to={item.to} className="font-bold underline decoration-[#f3c35e] underline-offset-4 hover:text-[#f3c35e]">{item.label}</Link> : item.label}
+              <span aria-hidden="true" className="mx-5 text-[#f3c35e] sm:mx-6">{'\u2022'}</span>
+            </span>
+          ))}
         </div>
-        <Link to="/donate" className="shrink-0 text-[13px] font-bold underline underline-offset-4 hover:text-saffron">
-          Contribute Now
-        </Link>
       </div>
     </div>
   )

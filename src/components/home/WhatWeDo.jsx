@@ -44,9 +44,9 @@ export default function WhatWeDo() {
               <Link to="/work" className="group block">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white shadow-soft">
                   <Photo src={it.image} alt={it.alt} className="transition duration-500 group-hover:scale-105" />
-                  <span className="absolute left-3 top-3 rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">{it.group}</span>
+                  <span className="absolute left-3 top-3 rounded-full bg-[#ff8000] px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">{it.group}</span>
                 </div>
-                <h3 className="mt-4 flex items-center justify-between border-b-2 border-ink/10 pb-3 text-xl font-bold text-royal transition group-hover:border-brand group-hover:text-brand">
+                <h3 className="mt-4 flex items-center justify-between border-b-2 border-ink/10 pb-3 text-xl font-bold text-royal transition group-hover:border-[#ff8000] group-hover:text-[#ff8000]">
                   {it.title}
                   <ArrowRight className="h-5 w-5 -translate-x-1 opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100" aria-hidden="true" />
                 </h3>

@@ -7,8 +7,8 @@ export default {
       // Existing class names (royal / leaf / saffron) are re-mapped so older pages restyle automatically.
       colors: {
         royal: { DEFAULT: '#1D1D1F', 700: '#0F0F10', 50: '#F3F1EE' }, // charcoal (headings, dark sections)
-        leaf: { DEFAULT: '#E4572E', 700: '#C94520', 50: '#FDF1EC' },  // brand orange
-        brand: { DEFAULT: '#E4572E', dark: '#C94520', light: '#FDF1EC' },
+        leaf: { DEFAULT: '#24963D', 700: '#1B7330', 50: '#EEF8EF' },  // logo green
+        brand: { DEFAULT: '#FF8000', dark: '#D96800', light: '#FFF3E0' }, // logo orange
         saffron: { DEFAULT: '#F6B21A', 700: '#E0A00C' },              // sunny yellow
         gold: '#F6B21A',
         ink: '#2B2B2B',

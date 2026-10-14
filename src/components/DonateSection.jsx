@@ -27,7 +27,7 @@ export default function DonateSection() {
                 {DONATION.upiQr ? <img src={DONATION.upiQr} alt="UPI QR code for Jan Manav Kalyan Foundation" className="h-full w-full object-contain" /> : <span className="px-4 text-sm text-ink/50">UPI QR code — to be added by the Foundation</span>}
               </div>
               <div className="mx-auto mt-5 flex max-w-sm items-center justify-between gap-3 rounded-xl bg-warm px-4 py-3 text-left">
-                <div><p className="text-xs text-ink/55">UPI ID (placeholder)</p><p className="text-sm font-semibold">{DONATION.upiId}</p></div>
+                <div><p className="text-xs text-ink/55">UPI ID </p><p className="text-sm font-semibold">{DONATION.upiId}</p></div>
                 <button onClick={copy} aria-label="Copy UPI ID" className="grid h-10 w-10 place-items-center rounded-full bg-royal text-white">{copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}</button>
               </div>
             </div>

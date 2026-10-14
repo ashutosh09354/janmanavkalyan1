@@ -1,49 +1,26 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { Users, GraduationCap, HeartPulse, Droplet } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Photo from './Photo'
-
-const chips = [
-  { icon: Users, label: 'Community Welfare' },
-  { icon: GraduationCap, label: 'Education Support' },
-  { icon: HeartPulse, label: 'Healthcare Assistance' },
-  { icon: Droplet, label: 'Blood Donation' },
-]
 
 export default function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="relative isolate w-full overflow-hidden bg-royal">
-      {/* Photo — focal point kept toward the group so faces stay visible on mobile */}
-      <div className="absolute inset-0 -z-10">
-        <Photo src="/images/hero/hero.jpeg" alt="Members and volunteers of Jan Manav Kalyan Foundation gathered at a community food distribution" position="62% 30%" eager />
-        {/* Light royal-blue overlay: photo stays visible */}
-        <div className="absolute inset-0 bg-gradient-to-r from-royal/85 via-royal/45 to-transparent max-md:bg-gradient-to-t max-md:from-royal max-md:via-royal/55 max-md:to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-royal/80 to-transparent" />
-      </div>
-
-      <div className="container-x flex min-h-[560px] flex-col justify-end pb-6 pt-56 sm:min-h-[600px] sm:pt-32 md:justify-center md:pb-24 md:pt-28 lg:min-h-[640px]">
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut' }} className="max-w-xl">
-          <h1 id="hero-title" className="text-4xl font-extrabold leading-[1.1] tracking-[0.03em] !text-white sm:text-5xl lg:text-6xl">
-            <span className="inline-block">Together, We Can</span>{' '}
-            <span className="inline-block">Create <span className="text-saffron">a Better Tomorrow</span></span>
+    <section aria-labelledby="hero-title" className="overflow-hidden bg-white py-10 sm:py-14 lg:py-9 xl:py-10">
+      <div className="container-x grid items-center gap-9 lg:min-h-[680px] lg:grid-cols-[.78fr_1.22fr] lg:gap-12">
+        <div className="max-w-[590px] lg:pb-4">
+          <div className="flex items-center gap-5 text-[12px] font-bold uppercase tracking-[0.18em] text-[#24963d]"><span className="h-px w-14 bg-[#24963d]" /> Our causes</div>
+          <h1 id="hero-title" style={{ fontFamily: 'Georgia, Times New Roman, serif' }} className="mt-8 text-5xl font-semibold leading-[.98] tracking-[-0.055em] text-black sm:text-6xl lg:text-7xl xl:text-[5.15rem]">
+            Serving Humanity,<br />Creating Hope
           </h1>
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-white/90 sm:text-base">
-            Jan Manav Kalyan Foundation works to create meaningful change through community service, humanitarian initiatives and collective action.
+          <p style={{ fontFamily: 'Georgia, Times New Roman, serif' }} className="mt-8 max-w-[540px] text-xl leading-[1.45] text-ink sm:text-2xl">
+            Supporting communities through clean-up drives, education, food distribution and welfare initiatives.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/donate" className="btn btn-saffron px-7">Donate Now</Link>
-            <Link to="/contact#volunteer" className="btn btn-ghost px-7">Join Our Mission</Link>
+          <Link to="/contact#volunteer" className="btn mt-9 !rounded-full !bg-[#ff8000] !px-8 !py-3.5 !text-lg !text-white hover:!bg-[#d96800]">Get Involved <ArrowRight className="h-5 w-5" /></Link>
+        </div>
+        <div className="overflow-hidden rounded-[2rem] border-[3px] border-[#e9b65d] bg-white sm:rounded-[2.5rem]">
+          <div className="aspect-[1.42/1] overflow-hidden rounded-[1.8rem] sm:rounded-[2.3rem]">
+            <Photo src="/images/hero/hero1.jpeg" alt="Jan Manav Kalyan Foundation volunteers at a clean-up drive" position="center" eager />
           </div>
-        </motion.div>
-
-        <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.6 }} className="mt-10 grid grid-cols-4 gap-2 sm:flex sm:flex-wrap sm:gap-8">
-          {chips.map(({ icon: I, label }) => (
-            <li key={label} className="flex flex-col items-center gap-1.5 text-center text-[11px] font-medium text-white sm:flex-row sm:text-sm">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-leaf sm:h-10 sm:w-10"><I className="h-4 w-4" aria-hidden="true" /></span>
-              {label}
-            </li>
-          ))}
-        </motion.ul>
+        </div>
       </div>
     </section>
   )

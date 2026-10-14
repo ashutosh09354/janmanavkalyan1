@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, Menu, X, Heart } from 'lucide-react'
 import Logo from './Logo'
 import Ticker from './layout/Ticker'
@@ -10,14 +9,6 @@ const NAV = [
   {
     label: 'Our Causes',
     to: '/causes',
-    children: [
-      { label: 'Education', to: '/causes' },
-      { label: 'Healthcare', to: '/causes' },
-      { label: 'Food Distribution', to: '/causes' },
-      { label: 'Blood Donation', to: '/causes' },
-      { label: 'Community Welfare', to: '/causes' },
-      { label: 'Environment', to: '/causes' },
-    ],
   },
   {
     label: 'Our Work',
@@ -35,7 +26,6 @@ const NAV = [
     children: [
       { label: 'Donate', to: '/donate' },
       { label: 'Volunteer', to: '/contact#volunteer-form' },
-      { label: 'Partner with Us', to: '/contact#volunteer-form' },
     ],
   },
   {
@@ -44,7 +34,6 @@ const NAV = [
     children: [
       { label: 'In the Media', to: '/media' },
       { label: 'Campaigns', to: '/campaigns' },
-      { label: 'Gallery', to: '/gallery' },
     ],
   },
   {
@@ -81,15 +70,14 @@ export default function Navbar() {
   return (
     <>
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">Skip to content</a>
-      <Ticker />
       <header className={`sticky top-0 z-40 w-full bg-white transition ${scrolled || open ? 'shadow-soft' : 'border-b border-ink/10'}`}>
-        <div className="container-x flex h-[76px] items-center justify-between gap-4">
+        <div className="container-x flex h-[70px] items-center justify-between gap-3 xl:h-[78px]">
           <Logo showText />
 
-          <nav aria-label="Main" className="hidden items-center lg:flex">
+          <nav aria-label="Main" className="hidden items-center xl:flex">
             {NAV.map((item) => (
               <div key={item.label} className="group relative">
-                <Link to={item.to} className="flex items-center gap-1 px-3 py-6 text-[13.5px] font-semibold text-ink transition hover:text-brand xl:px-4">
+                <Link to={item.to} className={`flex items-center gap-1 px-3 py-6 text-[13.5px] font-semibold transition hover:text-brand xl:px-4 ${pathname === item.to ? 'text-brand' : 'text-ink'}`}>
                   {item.label}
                   {item.children && <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden="true" />}
                 </Link>
@@ -107,11 +95,11 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link to="/donate" className="btn btn-brand hidden !min-h-11 !rounded-full !px-6 !py-2.5 !text-[13px] uppercase tracking-wider lg:inline-flex">
+            <Link to="/donate" className="btn hidden !min-h-11 !rounded-full !bg-[#ff8000] !px-7 !py-2.5 !text-[14px] !text-white hover:!bg-[#d96800] xl:inline-flex">
               <Heart className="h-4 w-4" aria-hidden="true" /> Contribute
             </Link>
             <button
-              className="grid h-11 w-11 place-items-center text-royal lg:hidden"
+              className="grid h-11 w-11 place-items-center text-royal xl:hidden"
               aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
               aria-controls="mobile-menu"
@@ -122,16 +110,11 @@ export default function Navbar() {
           </div>
         </div>
 
-        <AnimatePresence>
-          {open && (
-            <motion.nav
+        {open && (
+            <nav
               id="mobile-menu"
               aria-label="Mobile"
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: 'auto', opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="max-h-[calc(100dvh-116px)] overflow-y-auto border-t border-ink/10 bg-white lg:hidden"
+              className="max-h-[calc(100dvh-110px)] overflow-y-auto border-t border-ink/10 bg-white xl:hidden"
             >
               <ul className="container-x py-2">
                 {NAV.map((item) => (
@@ -160,13 +143,13 @@ export default function Navbar() {
                   </li>
                 ))}
                 <li className="py-4">
-                  <Link to="/donate" className="btn btn-brand w-full !rounded-full uppercase tracking-wider"><Heart className="h-4 w-4" aria-hidden="true" /> Contribute</Link>
+                  <Link to="/donate" className="btn w-full !rounded-full !bg-[#ff8000] !text-white hover:!bg-[#d96800]"><Heart className="h-4 w-4" aria-hidden="true" /> Contribute</Link>
                 </li>
               </ul>
-            </motion.nav>
+            </nav>
           )}
-        </AnimatePresence>
       </header>
+      <Ticker />
     </>
   )
 }

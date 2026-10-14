@@ -58,7 +58,7 @@ export const IMPACT = [
 export const BLOOD_DONATION_IMAGE = '/images/instsgram post/655713653_18098869942784421_5885450048993260738_n..webp'
 
 export const CAUSES = [
-  { slug: 'education', icon: 'BookOpen', title: 'Education', text: 'Supporting learning opportunities for children and families.' },
+  { slug: 'education', icon: 'BookOpen', title: 'Education', text: 'Supporting learning opportunities for children and families.', image: '/images/about/About.png', imageAlt: 'Foundation members and volunteers at a community activity' },
   { slug: 'healthcare', icon: 'Activity', title: 'Healthcare', text: 'Community healthcare support and awareness.', image: '/images/instsgram post/656077685_18059426180691292_4985631946105061619_n..webp', imageAlt: 'Foundation members gathered outside a hospital emergency department' },
   { slug: 'food', icon: 'Soup', title: 'Food Distribution', text: 'Providing food to those in need.', image: '/images/instsgram post/655987176_18069999431270939_3194857039852054680_n..webp', imageAlt: 'Volunteers serving food at a community activity' },
   { slug: 'blood', icon: 'Droplet', title: 'Blood Donation', text: 'Organizing blood donation camps.', image: BLOOD_DONATION_IMAGE },
@@ -124,6 +124,24 @@ export const MEDIA = [
     image: '/images/instagram/insta5.webp',
     alt: 'Newspaper clipping on a community meal (bhandara) organised by Jan Manav Kalyan Foundation',
     headline: '',
+  },
+  {
+    id: 'cause-blood-donation',
+    image: '/images/causes/blooddonation.png',
+    alt: 'Newspaper coverage of a Jan Manav Kalyan Foundation blood donation activity',
+    headline: 'Blood donation activity',
+  },
+  {
+    id: 'cause-news-cutting-1',
+    image: '/images/causes/newscuting.png',
+    alt: 'Newspaper coverage of Jan Manav Kalyan Foundation helping save a police officer’s life through blood donation',
+    headline: 'Foundation blood-donation support',
+  },
+  {
+    id: 'cause-news-cutting-2',
+    image: '/images/causes/newscutting1.png',
+    alt: 'Newspaper coverage of Jan Manav Kalyan Foundation arranging blood for a woman in need',
+    headline: 'Foundation emergency blood support',
   },
 ]
 

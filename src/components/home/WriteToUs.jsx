@@ -15,7 +15,7 @@ export default function WriteToUs() {
     setSent(true)
   }
   return (
-    <section id="write-to-us" aria-labelledby="write-h" className="scroll-mt-28 bg-brand py-16 sm:py-20 lg:py-24">
+    <section id="write-to-us" aria-labelledby="write-h" className="scroll-mt-28 bg-[#ff8000] py-16 sm:py-20 lg:py-24">
       <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
         <Reveal>
           <h2 id="write-h" className="section-title !text-white">Write to us</h2>

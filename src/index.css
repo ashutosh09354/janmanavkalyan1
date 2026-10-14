@@ -35,18 +35,14 @@
   .editorial-heading { @apply font-sans text-3xl font-bold leading-[1.15] tracking-tight text-royal sm:text-[2.5rem] lg:text-[2.9rem]; }
   .text-link { @apply inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-royal transition hover:text-leaf-700; }
 }
-.home-hero > img { object-fit: cover; object-position: var(--photo-position, center); }
-.home-hero-overlay {
-  background: linear-gradient(90deg, rgba(16, 27, 38, 0.84) 0%, rgba(16, 27, 38, 0.74) 40%, rgba(16, 27, 38, 0.43) 68%, rgba(16, 27, 38, 0.12) 100%);
-}
-@media (max-width: 767px) {
-  .home-hero > img { object-position: var(--photo-position-mobile, var(--photo-position, center)); }
-  .home-hero-overlay { background: linear-gradient(0deg, rgba(16, 27, 38, 0.88) 0%, rgba(16, 27, 38, 0.64) 43%, rgba(16, 27, 38, 0.16) 100%); }
-}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 .marquee-track { animation: marquee 38s linear infinite; }
 .marquee-wrap:hover .marquee-track { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none !important; } }
