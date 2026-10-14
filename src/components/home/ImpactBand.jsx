@@ -37,14 +37,14 @@ function Counter({ value }) {
 
 export default function ImpactBand() {
   return (
-    <section id="impact" aria-labelledby="impact-h" className="scroll-mt-28 bg-royal py-16 text-white sm:py-20">
+    <section id="impact" aria-labelledby="impact-h" className="scroll-mt-28 bg-royal py-8 text-white sm:py-10">
       <div className="container-x">
         <Reveal><SectionTitle id="impact-h" light>Our Impact</SectionTitle></Reveal>
-        <dl className="mt-12 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="mt-6 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {IMPACT.map((m) => (
-            <div key={m.label} className="flex flex-col bg-royal px-6 py-9 text-center sm:py-12">
-              <dt className="order-2 mx-auto mt-3 max-w-[14rem] text-sm font-medium leading-snug text-white/80 sm:text-base">{m.label}</dt>
-              <dd className="order-1 text-5xl font-extrabold tracking-tight text-saffron sm:text-6xl">
+            <div key={m.label} className="flex flex-col bg-royal px-5 py-5 text-center sm:py-6">
+              <dt className="order-2 mx-auto mt-2 max-w-[14rem] text-sm font-medium leading-snug text-white/90">{m.label}</dt>
+              <dd className="order-1 text-4xl font-extrabold tracking-tight text-saffron sm:text-5xl">
                 {m.value === null ? 'XX+' : <Counter value={m.value} />}
               </dd>
             </div>

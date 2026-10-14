@@ -15,13 +15,13 @@ const CONTRIB = [
 
 export default function ContributeSection() {
   return (
-    <section id="get-involved" aria-labelledby="contrib-h" className="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-24">
+    <section id="get-involved" aria-labelledby="contrib-h" className="scroll-mt-28 bg-white py-14 sm:py-16 lg:py-20">
       <div className="container-x">
         <Reveal><SectionTitle id="contrib-h">Contribute</SectionTitle></Reveal>
-        <div className="mt-12 grid gap-7 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {CONTRIB.map(({ icon: Icon, ...c }, n) => (
             <Reveal key={c.title} delay={n * 0.08}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/15 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className="relative">
                   <div className="aspect-[16/10] overflow-hidden">
                     <Photo src={c.image} alt={c.alt} className="transition duration-500 group-hover:scale-105" />
@@ -30,7 +30,7 @@ export default function ContributeSection() {
                 </div>
                 <div className="flex flex-1 flex-col px-6 pb-7 pt-10">
                   <h3 className="text-2xl font-bold text-royal">{c.title}</h3>
-                  <p className="mt-2 flex-1 text-base leading-relaxed text-ink/70">{c.text}</p>
+                  <p className="mt-2 flex-1 text-base leading-relaxed text-ink/85">{c.text}</p>
                   <Link to={c.to} className="btn mt-6 w-fit !rounded-full !bg-[#ff8000] !px-7 !text-white hover:!bg-[#d96800]">{c.cta} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
                 </div>
               </article>

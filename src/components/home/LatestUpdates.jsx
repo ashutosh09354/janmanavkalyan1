@@ -15,13 +15,13 @@ const UPDATES = [
 
 export default function LatestUpdates() {
   return (
-    <section id="updates" aria-labelledby="updates-h" className="scroll-mt-28 bg-sand py-16 sm:py-20 lg:py-24">
+    <section id="updates" aria-labelledby="updates-h" className="scroll-mt-28 bg-sand py-14 sm:py-16 lg:py-20">
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal><SectionTitle id="updates-h">Latest Updates</SectionTitle></Reveal>
           <Link to="/media" className="text-link uppercase tracking-wider text-brand">View all <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {UPDATES.map((u, n) => (
             <Reveal key={u.image} delay={n * 0.06}>
               <Link to="/media" className="group block overflow-hidden rounded-xl bg-white shadow-soft transition hover:shadow-lift">

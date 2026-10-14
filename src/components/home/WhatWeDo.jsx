@@ -35,10 +35,10 @@ const GROUPS = [
 export default function WhatWeDo() {
   const tiles = GROUPS.flatMap((g) => g.items.map((it) => ({ ...it, group: g.title })))
   return (
-    <section id="causes" aria-labelledby="wwd-h" className="scroll-mt-28 bg-sand py-16 sm:py-20 lg:py-24">
+    <section id="causes" aria-labelledby="wwd-h" className="scroll-mt-28 bg-sand py-14 sm:py-16 lg:py-20">
       <div className="container-x">
         <Reveal><SectionTitle id="wwd-h">What We Work On</SectionTitle></Reveal>
-        <div className="mt-12 grid gap-x-7 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-x-7 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {tiles.map((it, n) => (
             <Reveal key={it.title} delay={(n % 3) * 0.07}>
               <Link to="/work" className="group block">

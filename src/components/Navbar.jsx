@@ -71,13 +71,13 @@ export default function Navbar() {
     <>
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">Skip to content</a>
       <header className={`sticky top-0 z-40 w-full bg-white transition ${scrolled || open ? 'shadow-soft' : 'border-b border-ink/10'}`}>
-        <div className="container-x flex h-[70px] items-center justify-between gap-3 xl:h-[78px]">
+        <div className="container-x flex h-[68px] items-center justify-between gap-4 xl:h-[74px]">
           <Logo showText />
 
-          <nav aria-label="Main" className="hidden items-center xl:flex">
+          <nav aria-label="Main" className="hidden flex-1 items-center justify-center xl:flex">
             {NAV.map((item) => (
               <div key={item.label} className="group relative">
-                <Link to={item.to} className={`flex items-center gap-1 px-3 py-6 text-[13.5px] font-semibold transition hover:text-brand xl:px-4 ${pathname === item.to ? 'text-brand' : 'text-ink'}`}>
+                <Link to={item.to} className={`flex items-center gap-1 px-2.5 py-5 text-[13px] font-semibold transition hover:text-brand xl:px-3 ${pathname === item.to ? 'text-brand' : 'text-ink'}`}>
                   {item.label}
                   {item.children && <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden="true" />}
                 </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link to="/donate" className="btn hidden !min-h-11 !rounded-full !bg-[#ff8000] !px-7 !py-2.5 !text-[14px] !text-white hover:!bg-[#d96800] xl:inline-flex">
+            <Link to="/donate" className="btn hidden !rounded-full !bg-[#ff8000] !px-6 !py-2.5 !text-[14px] !text-white hover:!bg-[#d96800] xl:inline-flex">
               <Heart className="h-4 w-4" aria-hidden="true" /> Contribute
             </Link>
             <button

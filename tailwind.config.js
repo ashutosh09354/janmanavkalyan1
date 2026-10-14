@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins', 'DM Sans', 'system-ui', 'sans-serif'],
-        serif: ['Poppins', 'system-ui', 'sans-serif'],
+        serif: ['Georgia', 'Times New Roman', 'serif'],
       },
       boxShadow: {
         soft: '0 6px 24px -8px rgba(0,0,0,0.12)',
