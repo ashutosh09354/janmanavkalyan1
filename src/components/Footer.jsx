@@ -14,7 +14,7 @@ const groups = [
     ],
   },
   {
-    title: 'Get Involved',
+    title: 'Join Us',
     links: [
       ['Donate', '/donate'],
       ['Volunteer', '/contact#volunteer-form'],
@@ -23,7 +23,7 @@ const groups = [
     ],
   },
   {
-    title: 'Updates',
+    title: 'News & Updates',
     links: [
       ['In the Media', '/media'],
       ['Photo Gallery', '/gallery'],
