@@ -15,7 +15,7 @@ export default function WriteToUs() {
     setSent(true)
   }
   return (
-    <section id="write-to-us" aria-labelledby="write-h" className="scroll-mt-28 bg-[#ff8000] py-16 sm:py-20 lg:py-24">
+    <section id="write-to-us" aria-labelledby="write-h" className="scroll-mt-28 bg-[#24963d] py-16 sm:py-20 lg:py-24">
       <div className="container-x grid items-start gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
         <Reveal>
           <h2 id="write-h" className="section-title !text-white">Write to us</h2>
@@ -45,7 +45,7 @@ export default function WriteToUs() {
               <label><span className="sr-only">Your email</span><input required type="email" placeholder="Your Email" autoComplete="email" className={field} /></label>
               <label className="sm:col-span-2"><span className="sr-only">Contact number</span><input type="tel" placeholder="Contact Number" autoComplete="tel" className={field} /></label>
               <label className="sm:col-span-2"><span className="sr-only">Message</span><textarea rows={4} placeholder="Your Message" className={field} /></label>
-              <button type="submit" className="btn sm:col-span-2 !rounded-full bg-royal !px-8 text-white hover:bg-black sm:w-fit">
+              <button type="submit" className="btn sm:col-span-2 !bg-white !px-8 !text-[#24963d] hover:!bg-[#eef8ef] sm:w-fit">
                 Send <Send className="h-4 w-4" aria-hidden="true" />
               </button>
             </form>

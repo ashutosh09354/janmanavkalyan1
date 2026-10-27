@@ -20,7 +20,7 @@ export default function KnowingSection() {
           <p className="mt-6 text-lg leading-relaxed text-ink/85">
             {ORG.name} is a community-led organisation. {ORG.mission}
           </p>
-          <Link to="/about" className="btn mt-7 !rounded-full !bg-[#ff8000] !px-8 !text-white hover:!bg-[#d96800]">Discover More <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <Link to="/about" className="btn mt-7 !px-8">Discover More <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </Reveal>
       </div>
     </section>

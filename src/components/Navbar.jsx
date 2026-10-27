@@ -21,7 +21,7 @@ const NAV = [
   },
   { label: 'Impact', to: '/#impact' },
   {
-    label: 'Get Involved',
+    label: 'Join Us',
     to: '/#get-involved',
     children: [
       { label: 'Donate', to: '/donate' },
@@ -95,7 +95,7 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link to="/donate" className="btn hidden !rounded-full !bg-[#ff8000] !px-6 !py-2.5 !text-[14px] !text-white hover:!bg-[#d96800] xl:inline-flex">
+            <Link to="/donate" className="btn hidden !px-6 !py-2.5 !text-[14px] xl:inline-flex">
               <Heart className="h-4 w-4" aria-hidden="true" /> Contribute
             </Link>
             <button
@@ -143,7 +143,7 @@ export default function Navbar() {
                   </li>
                 ))}
                 <li className="py-4">
-                  <Link to="/donate" className="btn w-full !rounded-full !bg-[#ff8000] !text-white hover:!bg-[#d96800]"><Heart className="h-4 w-4" aria-hidden="true" /> Contribute</Link>
+                  <Link to="/donate" className="btn w-full"><Heart className="h-4 w-4" aria-hidden="true" /> Contribute</Link>
                 </li>
               </ul>
             </nav>

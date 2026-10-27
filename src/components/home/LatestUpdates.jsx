@@ -24,11 +24,11 @@ export default function LatestUpdates() {
         <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {UPDATES.map((u, n) => (
             <Reveal key={u.image} delay={n * 0.06}>
-              <Link to="/media" className="group block overflow-hidden rounded-xl bg-white shadow-soft transition hover:shadow-lift">
-                <div className="aspect-[4/5] overflow-hidden bg-[#eee]">
+              <Link to="/media" className="group block overflow-hidden rounded-2xl bg-white shadow-soft transition duration-300 hover:shadow-lift hover:-translate-y-1">
+                <div className="aspect-[4/5] overflow-hidden rounded-t-2xl bg-[#eee]">
                   <Photo src={u.image} alt={u.alt} position="50% 0%" className="transition duration-500 group-hover:scale-105" />
                 </div>
-                <p className="border-t-4 border-brand px-4 py-3 text-sm font-semibold text-royal sm:text-base">{u.label}</p>
+                <p className="border-t-4 border-brand px-4 py-3 text-sm font-semibold text-royal transition-colors duration-300 group-hover:text-brand sm:text-base">{u.label}</p>
               </Link>
             </Reveal>
           ))}

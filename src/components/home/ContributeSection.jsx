@@ -21,7 +21,7 @@ export default function ContributeSection() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {CONTRIB.map(({ icon: Icon, ...c }, n) => (
             <Reveal key={c.title} delay={n * 0.08}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/15 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand/20 bg-white shadow-soft transition duration-300 hover:-translate-y-1.5 hover:shadow-lift hover:border-brand/50">
                 <div className="relative">
                   <div className="aspect-[16/10] overflow-hidden">
                     <Photo src={c.image} alt={c.alt} className="transition duration-500 group-hover:scale-105" />
@@ -31,7 +31,7 @@ export default function ContributeSection() {
                 <div className="flex flex-1 flex-col px-6 pb-7 pt-10">
                   <h3 className="text-2xl font-bold text-royal">{c.title}</h3>
                   <p className="mt-2 flex-1 text-base leading-relaxed text-ink/85">{c.text}</p>
-                  <Link to={c.to} className="btn mt-6 w-fit !rounded-full !bg-[#ff8000] !px-7 !text-white hover:!bg-[#d96800]">{c.cta} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+                  <Link to={c.to} className="btn mt-6 w-fit !px-7">{c.cta} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
                 </div>
               </article>
             </Reveal>

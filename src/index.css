@@ -22,13 +22,13 @@
 @layer components {
   .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-7 lg:px-8; }
   .section-y { @apply py-14 sm:py-16 lg:py-20; }
-  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold transition duration-200 focus-visible:ring-2 focus-visible:ring-saffron; }
-  .btn-saffron { @apply bg-saffron text-ink hover:bg-saffron-700; }
-  .btn-brand { @apply bg-brand text-white hover:bg-brand-dark; }
-  .btn-royal { @apply bg-royal text-white hover:bg-royal-700; }
-  .btn-leaf { @apply bg-leaf text-white hover:bg-leaf-700; }
-  .btn-ghost { @apply border border-white/70 text-white hover:bg-white hover:text-royal; }
-  .btn-outline { @apply border border-royal text-royal hover:bg-royal hover:text-white; }
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-[5px] bg-[#24963d] px-6 py-3 text-base font-medium text-white shadow-[0_7px_12px_rgba(0,0,0,0.22)] transition duration-200 hover:bg-[#1f8335] hover:shadow-[0_9px_16px_rgba(0,0,0,0.26)] focus-visible:ring-2 focus-visible:ring-[#24963d]; }
+  .btn-saffron,
+  .btn-brand,
+  .btn-royal,
+  .btn-leaf,
+  .btn-ghost,
+  .btn-outline { @apply border-0 bg-[#24963d] text-white hover:bg-[#1f8335] hover:text-white; }
   .eyebrow { @apply text-[13px] font-semibold uppercase tracking-[0.15em] text-brand; }
   .section-title { @apply text-3xl font-bold leading-[1.12] tracking-tight text-royal sm:text-4xl lg:text-[2.6rem]; }
   .title-bar { @apply mt-3 block h-1 w-14 rounded-full bg-brand; }

@@ -14,7 +14,7 @@ export default function Hero() {
           <p style={{ fontFamily: 'Georgia, Times New Roman, serif' }} className="mt-8 max-w-[540px] text-xl leading-[1.45] text-ink sm:text-2xl">
             Supporting communities through clean-up drives, education, food distribution and welfare initiatives.
           </p>
-          <Link to="/contact#volunteer" className="btn mt-9 !rounded-full !bg-[#ff8000] !px-8 !py-3.5 !text-lg !text-white hover:!bg-[#d96800]">Get Involved <ArrowRight className="h-5 w-5" /></Link>
+          <Link to="/contact#volunteer" className="btn mt-9 !px-8 !py-3.5 !text-lg">Get Involved <ArrowRight className="h-5 w-5" /></Link>
         </div>
         <div className="overflow-hidden rounded-[2rem] border-[3px] border-[#e9b65d] bg-white sm:rounded-[2.5rem]">
           <div className="aspect-[1.42/1] overflow-hidden rounded-[1.8rem] sm:rounded-[2.3rem]">
