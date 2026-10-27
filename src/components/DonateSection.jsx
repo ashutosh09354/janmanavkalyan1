@@ -24,7 +24,7 @@ export default function DonateSection() {
           {tab === 'upi' ? (
             <div className="mt-6 text-center">
               <div className="mx-auto grid h-52 w-52 place-items-center overflow-hidden rounded-2xl border-2 border-dashed border-royal/25 bg-warm">
-                {DONATION.upiQr ? <img src={DONATION.upiQr} alt="UPI QR code for Jan Manav Kalyan Foundation" className="h-full w-full object-contain" /> : <span className="px-4 text-sm text-ink/50">UPI QR code — to be added by the Foundation</span>}
+                {DONATION.upiQr ? <img src={DONATION.upiQr} alt="UPI QR code for Janmanav Kalyan Foundation" className="h-full w-full object-contain" /> : <span className="px-4 text-sm text-ink/50">UPI QR code — to be added by the Foundation</span>}
               </div>
               <div className="mx-auto mt-5 flex max-w-sm items-center justify-between gap-3 rounded-xl bg-warm px-4 py-3 text-left">
                 <div><p className="text-xs text-ink/55">UPI ID </p><p className="text-sm font-semibold">{DONATION.upiId}</p></div>

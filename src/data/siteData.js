@@ -7,7 +7,7 @@ import instagramGalleryImages from 'virtual:instagram-gallery-images'
 // ============================================================
 
 export const ORG = {
-  name: 'Jan Manav Kalyan Foundation',
+  name: 'Janmanav Kalyan Foundation',
   tagline: 'Serving Humanity, Creating Hope',
   hindiTagline: 'सेवा परमो धर्म:', // shown in the supplied design mockup; confirm with the NGO
   mission:
@@ -76,7 +76,7 @@ export const WORK_CATEGORIES = [
 const INSTAGRAM_GALLERY_IMAGES = instagramGalleryImages.map((image, index) => ({
   id: `instagram-folder-${index}`,
   category: 'Community Events',
-  title: 'Jan Manav Kalyan Foundation activity',
+  title: 'Janmanav Kalyan Foundation activity',
   date: '',
   image,
 }))
@@ -85,15 +85,15 @@ const INSTAGRAM_GALLERY_IMAGES = instagramGalleryImages.map((image, index) => ({
 // blank when the activity date has not been verified.
 export const WORK = [
   ...INSTAGRAM_GALLERY_IMAGES,
-  { id: 'instagram-post-1', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/625261739_18045333059713672_8242698759258600782_n..webp' },
-  { id: 'instagram-post-2', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655450985_18155250109444012_2279890235362913082_n..webp' },
-  { id: 'instagram-post-3', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655713653_18098869942784421_5885450048993260738_n..webp' },
-  { id: 'instagram-post-4', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655987176_18069999431270939_3194857039852054680_n..webp' },
-  { id: 'instagram-post-5', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/656077685_18059426180691292_4985631946105061619_n..webp' },
-  { id: 'instagram-post-6', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instagram/insta3.webp' },
-  { id: 'instagram-post-7', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instsgram post/658380524_18309529420287319_7949303713269082549_n..webp' },
-  { id: 'instagram-image-3', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instagram/insta3.webp' },
-  { id: 'instagram-image-2', category: 'Community Events', title: 'Jan Manav Kalyan Foundation activity', date: '', image: '/images/instagram/insta2.webp' },
+  { id: 'instagram-post-1', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/625261739_18045333059713672_8242698759258600782_n..webp' },
+  { id: 'instagram-post-2', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655450985_18155250109444012_2279890235362913082_n..webp' },
+  { id: 'instagram-post-3', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655713653_18098869942784421_5885450048993260738_n..webp' },
+  { id: 'instagram-post-4', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/655987176_18069999431270939_3194857039852054680_n..webp' },
+  { id: 'instagram-post-5', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/656077685_18059426180691292_4985631946105061619_n..webp' },
+  { id: 'instagram-post-6', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instagram/insta3.webp' },
+  { id: 'instagram-post-7', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instsgram post/658380524_18309529420287319_7949303713269082549_n..webp' },
+  { id: 'instagram-image-3', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instagram/insta3.webp' },
+  { id: 'instagram-image-2', category: 'Community Events', title: 'Janmanav Kalyan Foundation activity', date: '', image: '/images/instagram/insta2.webp' },
   {
     id: 'instagram-c-dg5sry3rd',
     category: 'Community Events',
@@ -116,31 +116,31 @@ export const MEDIA = [
   {
     id: 'clip-1',
     image: '/images/instsgram post/655450985_18155250109444012_2279890235362913082_n..webp',
-    alt: 'Newspaper clipping covering a blood donation camp organised by Jan Manav Kalyan Foundation',
+    alt: 'Newspaper clipping covering a blood donation camp organised by Janmanav Kalyan Foundation',
     headline: 'जनमानव कल्याण फाउंडेशन ने लगाया रक्तदान शिविर, 11 लोगों ने किया रक्तदान', // visible in supplied clipping
   },
   {
     id: 'clip-2',
     image: '/images/instagram/insta5.webp',
-    alt: 'Newspaper clipping on a community meal (bhandara) organised by Jan Manav Kalyan Foundation',
+    alt: 'Newspaper clipping on a community meal (bhandara) organised by Janmanav Kalyan Foundation',
     headline: '',
   },
   {
     id: 'cause-blood-donation',
     image: '/images/causes/blooddonation.png',
-    alt: 'Newspaper coverage of a Jan Manav Kalyan Foundation blood donation activity',
+    alt: 'Newspaper coverage of a Janmanav Kalyan Foundation blood donation activity',
     headline: 'Blood donation activity',
   },
   {
     id: 'cause-news-cutting-1',
     image: '/images/causes/newscuting.png',
-    alt: 'Newspaper coverage of Jan Manav Kalyan Foundation helping save a police officer’s life through blood donation',
+    alt: 'Newspaper coverage of Janmanav Kalyan Foundation helping save a police officer’s life through blood donation',
     headline: 'Foundation blood-donation support',
   },
   {
     id: 'cause-news-cutting-2',
     image: '/images/causes/newscutting1.png',
-    alt: 'Newspaper coverage of Jan Manav Kalyan Foundation arranging blood for a woman in need',
+    alt: 'Newspaper coverage of Janmanav Kalyan Foundation arranging blood for a woman in need',
     headline: 'Foundation emergency blood support',
   },
 ]
@@ -174,5 +174,5 @@ export const INSTAGRAM_POSTS = [
   '/images/instsgram post/655450985_18155250109444012_2279890235362913082_n..webp',
 ].map((image, index) => ({
   image,
-  alt: `Moment from Jan Manav Kalyan Foundation's Instagram, photo ${index + 1}`,
+  alt: `Moment from Janmanav Kalyan Foundation's Instagram, photo ${index + 1}`,
 }))

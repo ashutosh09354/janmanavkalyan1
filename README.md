@@ -1,4 +1,4 @@
-# Jan Manav Kalyan Foundation — Website (Goonj-style design)
+# Janmanav Kalyan Foundation — Website (Goonj-style design)
 
 React + Vite + Tailwind + React Router + Framer Motion + Lucide.
 

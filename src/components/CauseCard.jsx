@@ -11,7 +11,7 @@ export default function CauseCard({ icon, title, text, image, imageAlt, to = '/c
           <div className="h-full w-full transition duration-500 group-hover:scale-105">
             <Photo
               src={image}
-              alt={imageAlt || `${title} activity by Jan Manav Kalyan Foundation`}
+              alt={imageAlt || `${title} activity by Janmanav Kalyan Foundation`}
               fit="cover"
             />
           </div>

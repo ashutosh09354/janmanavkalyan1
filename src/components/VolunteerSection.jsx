@@ -15,7 +15,7 @@ export default function VolunteerSection() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="aspect-[16/9] overflow-hidden rounded-2xl ring-2 ring-white/20 shadow-lift">
-            <Photo src="/images/about/About.png" alt="Jan Manav Kalyan Foundation members standing together" position="center 40%" />
+            <Photo src="/images/about/About.png" alt="Janmanav Kalyan Foundation members standing together" position="center 40%" />
           </div>
         </Reveal>
       </div>

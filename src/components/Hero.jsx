@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
         <div className="overflow-hidden rounded-[2rem] border-[3px] border-[#e9b65d] bg-white sm:rounded-[2.5rem]">
           <div className="aspect-[1.42/1] overflow-hidden rounded-[1.8rem] sm:rounded-[2.3rem]">
-            <Photo src="/images/hero/hero1.jpeg" alt="Jan Manav Kalyan Foundation volunteers at a clean-up drive" position="center" eager />
+            <Photo src="/images/hero/hero1.jpeg" alt="Janmanav Kalyan Foundation volunteers at a clean-up drive" position="center" eager />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const storyMoments = [
     title: 'When someone steps forward to donate.',
     text: 'A moment from a Foundation blood donation activity.',
     article: [
-      'Blood donation is a practical way to support people who need blood. This photograph captures a Jan Manav Kalyan Foundation member donating at a blood bank.',
+      'Blood donation is a practical way to support people who need blood. This photograph captures a Janmanav Kalyan Foundation member donating at a blood bank.',
       'The Foundation has reported that 11 people donated blood at one camp. Each donation is a personal act of care, made possible by people choosing to show up for others.',
       'This story shares the moment visible in the photograph. Further details about the date, location and people supported have not been confirmed.',
     ],
