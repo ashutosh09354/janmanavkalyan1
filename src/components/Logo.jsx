@@ -13,7 +13,7 @@ export default function Logo({ light = false, showText = true }) {
       )}
       {showText && (
         <span className="leading-tight">
-          <span className={`block text-[10px] font-bold sm:text-[12px] ${light ? 'text-white' : 'text-ink'}`}>JANMANAV KALYAN<br />FOUNDATION</span>
+          <span className={`block text-[10px] font-extrabold tracking-tight sm:text-[12px] ${light ? 'text-white' : 'text-ink'}`}>JANMANAV KALYAN<br />FOUNDATION</span>
         </span>
       )}
     </Link>

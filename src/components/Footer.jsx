@@ -6,7 +6,8 @@ const groups = [
   {
     title: 'Foundation',
     links: [
-      ['Our Mission', '/about'],
+      ['Our Mission', '/mission'],
+      ['Our Vision', '/vision'],
       ['Our Causes', '/causes'],
       ['Our Work', '/work'],
       ['Our Impact', '/#impact'],

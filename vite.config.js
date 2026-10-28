@@ -8,13 +8,13 @@ const resolvedGalleryModuleId = `\0${galleryModuleId}`
 const imageFile = /\.(avif|gif|jpe?g|png|svg|webp)$/i
 
 function instagramGalleryImages() {
-  const folder = path.resolve(process.cwd(), 'public/images/instsgram')
+  const folder = path.resolve(process.cwd(), 'public/images/instagram')
   const listImages = () => {
     if (!fs.existsSync(folder)) return []
     return fs.readdirSync(folder, { withFileTypes: true })
       .filter((entry) => entry.isFile() && imageFile.test(entry.name))
       .sort((a, b) => a.name.localeCompare(b.name))
-      .map((entry) => `/images/instsgram/${encodeURIComponent(entry.name)}`)
+      .map((entry) => `/images/instagram/${encodeURIComponent(entry.name)}`)
   }
 
   return {

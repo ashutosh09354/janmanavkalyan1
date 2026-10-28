@@ -15,6 +15,21 @@ export const ORG = {
   logo: '/images/media/jankalyan-logo.png',
 }
 
+export const MISSION_CONTENT = {
+  title: 'Building a Better Future, Together',
+  introduction: 'At Janmanav Kalyan Foundation, our mission is to create a society where every individual has the opportunity to live with dignity, access essential resources, and build a better future.',
+  belief: 'We believe that meaningful change begins with small acts of kindness, collective responsibility, and a genuine commitment to helping others. Our aim is to support underserved communities, empower individuals, and create opportunities that bring lasting, positive change to people’s lives.',
+  goals: [
+    { title: 'Empowering Communities', text: 'We work towards strengthening communities by encouraging participation, promoting awareness, and supporting people in their journey towards a better life.' },
+    { title: 'Creating Equal Opportunities', text: 'We believe everyone deserves a fair chance to learn, grow, and succeed, regardless of their background or circumstances.' },
+    { title: 'Supporting Those in Need', text: 'We aim to reach individuals and families facing challenges by encouraging compassion, cooperation, and community support.' },
+    { title: 'Inspiring Lasting Change', text: 'We strive to build a culture of kindness, social responsibility, and active participation that creates a positive impact for generations to come.' },
+  ],
+  commitment: 'Our mission goes beyond providing support. It is about creating hope, nurturing potential, and helping people become active participants in their own progress.',
+  closing: 'Through community involvement, dedicated efforts, and the support of people who share our vision, Janmanav Kalyan Foundation aspires to contribute to a more inclusive, compassionate, and empowered society.',
+  callToAction: 'Together, we can turn compassion into action and make a meaningful difference in people’s lives.',
+}
+
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/janmanav_kalyan_foundation/',
   facebook: '#', // PLACEHOLDER — add official Facebook page URL
@@ -30,7 +45,7 @@ export const CONTACT = {
 export const DONATION = {
   upiId: 'janmanavkalyan@sbi',
   upiQr: '/images/media/QR janamanv kalyan .jpeg',
-  accountName: 'JANMANV KALYAN FOUNDATION',
+  accountName: 'JANMANAV KALYAN FOUNDATION',
   accountNumber: '20523190247',
   ifsc: 'SBIN0000090',
   bank: 'State Bank Of India',
@@ -113,17 +128,17 @@ export const WORK = [
 
 // Only what is visibly printed in the supplied clipping may be added.
 export const MEDIA = [
+  ...INSTAGRAM_GALLERY_IMAGES.map((item) => ({
+    id: `media-${item.id}`,
+    image: item.image,
+    alt: `Janmanav Kalyan Foundation Instagram update ${item.id.replace('instagram-folder-', '')}`,
+    headline: 'Foundation activity update',
+  })),
   {
     id: 'clip-1',
     image: '/images/instsgram post/655450985_18155250109444012_2279890235362913082_n..webp',
     alt: 'Newspaper clipping covering a blood donation camp organised by Janmanav Kalyan Foundation',
     headline: 'जनमानव कल्याण फाउंडेशन ने लगाया रक्तदान शिविर, 11 लोगों ने किया रक्तदान', // visible in supplied clipping
-  },
-  {
-    id: 'clip-2',
-    image: '/images/instagram/insta5.webp',
-    alt: 'Newspaper clipping on a community meal (bhandara) organised by Janmanav Kalyan Foundation',
-    headline: '',
   },
   {
     id: 'cause-blood-donation',

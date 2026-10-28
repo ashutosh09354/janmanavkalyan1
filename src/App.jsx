@@ -5,6 +5,8 @@ import MobileCTA from './components/MobileCTA'
 import ScrollManager from './components/ScrollManager'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
+import VisionPage from './pages/VisionPage'
+import MissionPage from './pages/MissionPage'
 import CausesPage from './pages/CausesPage'
 import WorkPage from './pages/WorkPage'
 import CampaignsPage from './pages/CampaignsPage'
@@ -26,6 +28,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/vision" element={<VisionPage />} />
+          <Route path="/mission" element={<MissionPage />} />
           <Route path="/causes" element={<CausesPage />} />
           <Route path="/work" element={<WorkPage />} />
           <Route path="/campaigns" element={<CampaignsPage />} />

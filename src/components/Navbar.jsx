@@ -41,6 +41,8 @@ const NAV = [
     to: '/about',
     children: [
       { label: 'Knowing the Foundation', to: '/about' },
+      { label: 'Our Mission', to: '/mission' },
+      { label: 'Our Vision', to: '/vision' },
       { label: 'Contact', to: '/contact' },
       { label: 'Legal Center', to: '/legal-center' },
     ],

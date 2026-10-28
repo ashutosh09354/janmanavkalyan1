@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 const PAGE_TITLES = {
   '/': 'Building a Better Tomorrow',
   '/about': 'About Us',
+  '/vision': 'Our Vision',
+  '/mission': 'Our Mission',
   '/campaigns': 'Campaigns',
   '/causes': 'Our Causes',
   '/work': 'Our Work',
@@ -17,6 +19,8 @@ const PAGE_TITLES = {
 const PAGE_DESCRIPTIONS = {
   '/': 'Janmanav Kalyan Foundation supports communities through education, healthcare, food distribution, blood donation and humanitarian initiatives.',
   '/about': 'Learn about the community-led work and mission of Janmanav Kalyan Foundation.',
+  '/vision': 'Read the vision and values of Janmanav Kalyan Foundation.',
+  '/mission': 'Learn about the mission and focus areas of Janmanav Kalyan Foundation.',
   '/campaigns': 'Find campaign updates from Janmanav Kalyan Foundation. Campaign details are published when confirmed.',
   '/causes': 'Explore the community causes supported by Janmanav Kalyan Foundation.',
   '/work': 'Explore documented community activities by Janmanav Kalyan Foundation.',
