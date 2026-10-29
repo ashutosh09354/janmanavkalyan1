@@ -128,6 +128,18 @@ export const WORK = [
 
 // Only what is visibly printed in the supplied clipping may be added.
 export const MEDIA = [
+  {
+    id: 'instagram-post-2026-10-29-1',
+    image: '/images/instsgram%20post/WhatsApp%20Image%202026-10-29%20at%2011.18.02.jpeg',
+    alt: 'Janmanav Kalyan Foundation Instagram post',
+    headline: 'Foundation activity update',
+  },
+  {
+    id: 'instagram-post-2026-10-29-2',
+    image: '/images/instsgram%20post/WhatsApp%20Image%202026-10-29%20at%2011.18.07.jpeg',
+    alt: 'Janmanav Kalyan Foundation Instagram post',
+    headline: 'Foundation activity update',
+  },
   ...INSTAGRAM_GALLERY_IMAGES.map((item) => ({
     id: `media-${item.id}`,
     image: item.image,
